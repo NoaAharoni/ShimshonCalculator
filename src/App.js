@@ -29,13 +29,6 @@ const Form = () => {
     }
   };
 
-  // // Variables to set the date limits for the start date input
-  // const currentDate = new Date();
-  // const startLimit = new Date();
-  // startLimit.setMonth(currentDate.getMonth() - 8); // Set month to be from now until 8 month ago
-  // const endLimit = new Date(currentDate.getTime() + 15 * 24 * 60 * 60 * 1000); // Set the day to be from now to 15 days forward
-
-  // Render the form and the results
   return (
     <div>
       <MainForm onSubmit={getResults} />
