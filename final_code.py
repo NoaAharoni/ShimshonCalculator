@@ -119,6 +119,7 @@ def weather_checker(date):
     at any time of the day
 
     """
+
     api_response = get_api_response(date)
     times = api_response['hourly']['time']
     hours = [hour.replace(f'{date}T', '') for hour in times]
